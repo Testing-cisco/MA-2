@@ -5,7 +5,7 @@ import {
   commandController,
   azureDevOpController,
   gitHubParser,
-} from "./commands/commands.js";
+} from "./gh-migration-analyzer/src/commands/commands.js";
 
 /**
  * CLI command ADO-org
