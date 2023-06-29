@@ -7,8 +7,8 @@ filename=$1
 auth_token=$2
 echo -e "########### Starting Migration Analyzer #############"
 # Generate files for the report
-echo "orgName, repoName, pushedAt, isArchived, numOfPullRequests, numOfIssues, numOfProjects, numOfDiscussions, numOfPackages, numOfReleases, wikiEnabled, diskUsage" > ./metrics/repo-metrics.csv
-echo "orgName, numOfMembers, numOfProjects, numOfRepos, mostPrs, averagePrs, mostIssues, averageIssues" > ./metrics/org-metrics.csv
+echo "orgName, repoName, pushedAt, isArchived, numOfPullRequests, numOfIssues, numOfProjects, numOfDiscussions, numOfPackages, numOfReleases, wikiEnabled, diskUsage" > ./gh-migration-analyzer/metrics/repo-metrics.csv
+echo "orgName, numOfMembers, numOfProjects, numOfRepos, mostPrs, averagePrs, mostIssues, averageIssues" > ./gh-migration-analyzer/metrics/org-metrics.csv
 # Read the file and run migration analyzer for each organization name
 is_header=true
 while read org
